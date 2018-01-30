@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Formulaire</title>
+
+
+</head>
+
+
+<body>
+
+	<!--nous n'avons pas encore creer la page traitement.php
+	Cette page doit normalement effectuer le traitement des données-->
+
+	<form id="monForm" method="post" >
+
+		<p>
+           	 	<input type="radio" name="localisation" id="loc" value="loc">
+            		<label for="loc">Localisation</label>
+
+			<input type="radio" name="vente" id="ven" value="ven">
+            		<label for="ven">Vente</label>
+
+        	</p>
+
+		<label for="adresse"> Adresse </label>
+		<input type="text" name="adresse" id="adresse"required placeholder="Numéro de batiment, Rue" size="40">
+		<span id="missAdresse"></span><br>
+
+		<label for="code_postal"> Code postal </label>
+		<input type="number" name="code_postal" id="code_postal" min="0" placeholder="EX: 91000" required ><br>
+
+		<label for="ville"> Ville </label>
+		<input type="text" name="ville" id="ville"  required ><br>
+
+		<label for="type_bien"> Type de bien </label>
+		<select name="type_bien" id="type_bien">
+               		 <option value="Appart" selected>Appartement</option>
+                	 <option value="Maison">Maison</option>
+                	 <option value="XX">Autre</option>
+            	</select><br>
+
+		<label for="surface"> Surface </label>
+		<input type="number" name="surface" id="surface" min="0" required placeholder="EX:50m²"><br>
+
+		<label for="nb_pieces"> Nombres de pièces </label>
+		<select name="nb_pieces" id="nb_pieces" >
+               		 <option value="1" >1 pièce</option>
+                	 <option value="2" selected>2 pièces</option>
+                	 <option value="3">3 pièces</option>
+			 <option value="4">4 pièces</option>
+			 <option value="XX">Autre</option>
+            	</select>
+		<br>
+
+		<label for="nb_sdb"> Nombre de sdb </label>
+		<select name="nb_sdb" id="nb_sdb">
+               		 <option value="1" selected>1 sdb</option>
+                	 <option value="2">2 sdb</option>
+                	 <option value="3">3 sdb</option>
+			 <option value="XX">Autre</option>
+            	</select><br>
+
+		<input type="submit" value="Estimer" id="bouton_estimer"/>
+		<input type="reset" value="Annuler"/>
+
+
+	</form>
+
+	 <script src="formulaire.js"></script>
+
+
+
+
+</body>
+
+
+</html>
