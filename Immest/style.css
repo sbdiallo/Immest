@@ -1,0 +1,66 @@
+
+   
+label{
+	display: inline-block;
+	min-width: 300px;
+	font-size   : 150%;
+}
+
+html,body
+{
+
+    background-color: grey; /* Le fond de la page sera gis */
+    color: black; /* Le texte de la page sera noir */
+
+    margin-left:15px; margin-right:15px; 
+    padding:0px; 
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+  
+    
+}   
+
+form {
+
+ background-color:#FAFAFA;
+ position:absolute;
+ top:20%;
+ left:20%;
+ padding:10px;
+ 
+ }
+
+input, select{
+  
+  margin-left:50px; margin-right:15px; margin-top:30px; 
+  font-family : inherit;
+  font-size   : 150%;
+  border: #CCC 3px solid;
+  background-color: #DDEEFF;
+}
+
+#monForm input[type="submit"]
+{
+	
+	border: #DDEEFF 2px solid;
+	width: 20%;
+}
+
+#monForm input[type="submit"]:hover
+{
+	background-color: #66CC33;
+	cursor: pointer;
+}
+
+#monForm input[type="reset"]
+{
+	
+	border: #DDEEFF 2px solid;
+	width: 20%;
+}
+
+#monForm input[type="reset"]:hover
+{
+	background-color: #E6484D;
+	cursor: pointer;
+}
+
